@@ -55,12 +55,12 @@ class SkillsManager {
   constructor () {
     this.skills = []
   }
-  addSkill(Skill) {
-    if (typeof skill === 'string' && skill.length >=2 ) {
+  addSkill(skill) {
+    if (typeof skill === 'string' && skill.length >= 2) {
       this.skills.push(skill);
       return skill;
     }
-    return null
+    return null;
   }
   getAllSkills() {
     return this.skills;
